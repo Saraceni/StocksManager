@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="StocksManager.AddEditStockPage">
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+	</ContentPage.Padding>
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout Padding="10, 10, 10, 0">
+				<Frame OutlineColor="Accent">
+					<StackLayout Orientation="Vertical">
+						<Label x:Name="symbol"
+							Text = "APPL"
+							FontAttributes="Bold"
+							HorizontalOptions="FillAndExpand"
+							HorizontalTextAlignment="Start"/>
+						<Label x:Name="company"
+							Text = "Empresa com um nome gigante da porra aff mano"
+							FontSize="Small"
+							HorizontalOptions="FillAndExpand"
+							HorizontalTextAlignment="Start"
+							LineBreakMode="TailTruncation" />
+					</StackLayout>
+				</Frame>
+				<Frame OutlineColor="Accent">
+					<StackLayout Orientation="Horizontal">
+						<Label
+							Text = "Stock Price:"
+							FontAttributes="None"
+							HorizontalOptions="Center"
+							VerticalOptions="Center"
+							HorizontalTextAlignment="Start"/>
+						<Label x:Name="currency1"
+							Text = "USD"
+							FontAttributes="Bold"
+							HorizontalOptions="Center"
+							VerticalOptions="Center"
+							HorizontalTextAlignment="Start"/>
+						<Entry x:Name="stockPrice"
+							HorizontalOptions="FillAndExpand"
+							VerticalOptions="Center"
+							HorizontalTextAlignment="End"
+							Keyboard="Numeric"
+							Text="0.00" />
+						<ActivityIndicator x:Name="activityIndicator"
+							IsRunning="true"
+							HorizontalOptions="Center"
+							VerticalOptions="Center" />
+					</StackLayout>
+				</Frame>
+				<Frame OutlineColor="Accent">
+					<StackLayout Orientation="Vertical">
+						<StackLayout Orientation="Horizontal">
+							<Label
+								Text = "Number ofStocks"
+								FontAttributes="Bold"
+								HorizontalOptions="Center"
+								VerticalOptions="Center"
+								HorizontalTextAlignment="Start"/>
+							<Entry x:Name="stockQuantity"
+								HorizontalOptions="FillAndExpand"
+								VerticalOptions="Center"
+								Keyboard="Numeric"
+								HorizontalTextAlignment="End"
+								TextChanged="NumStocksChanged"
+								Text="1" />
+						</StackLayout>
+						<StackLayout Orientation="Horizontal">
+							<Label
+								HorizontalOptions="Center"
+								VerticalOptions="Center"
+								FontSize="Small"
+								Text="Total:" />
+							<Label x:Name="currency2"
+								HorizontalOptions="Center"
+								VerticalOptions="Center"
+								FontSize="Small"
+								Text="USD"
+								FontAttributes="Bold" />
+							<Label x:Name="total"
+								HorizontalOptions="Center"
+								VerticalOptions="Center"
+								FontSize="Small"
+								Text="0.00" />
+						</StackLayout>
+					</StackLayout>
+				</Frame>
+				<Frame OutlineColor="Accent">
+					<StackLayout Orientation="Vertical">
+						<StackLayout Orientation="Horizontal">
+							<Label
+								HorizontalOptions="Center"
+								VerticalOptions="Center"
+								FontSize="Small"
+								Text="Open"
+								FontAttributes="Bold"/>
+							<Label x:Name="open"
+								HorizontalOptions="FillAndExpand"
+								VerticalOptions="Center"
+								FontSize="Small"
+								Text="0.00"
+								HorizontalTextAlignment="End" />
+						</StackLayout>
+						<StackLayout Orientation="Horizontal">
+							<Label
+								HorizontalOptions="Center"
+								VerticalOptions="Center"
+								FontSize="Small"
+								Text="Change"
+								FontAttributes="Bold"/>
+							<Label x:Name="change"
+								HorizontalOptions="FillAndExpand"
+								VerticalOptions="Center"
+								FontSize="Small"
+								Text="0.00"
+								TextColor="Green"
+								HorizontalTextAlignment="End" />
+						</StackLayout>
+						<StackLayout Orientation="Horizontal">
+							<Label
+								HorizontalOptions="Center"
+								VerticalOptions="Center"
+								FontSize="Small"
+								Text="Percent Change"
+								FontAttributes="Bold"/>
+							<Label x:Name="percentChange"
+								HorizontalOptions="FillAndExpand"
+								VerticalOptions="Center"
+								FontSize="Small"
+								Text="0.00%"
+								TextColor="Green"
+								HorizontalTextAlignment="End" />
+						</StackLayout>
+						<StackLayout Orientation="Horizontal">
+							<Label
+								HorizontalOptions="Center"
+								VerticalOptions="Center"
+								FontSize="Small"
+								Text="Day's Low"
+								FontAttributes="Bold"/>
+							<Label x:Name="daysLow"
+								HorizontalOptions="FillAndExpand"
+								VerticalOptions="Center"
+								FontSize="Small"
+								Text="0.00"
+								HorizontalTextAlignment="End" />
+						</StackLayout>
+						<StackLayout Orientation="Horizontal">
+							<Label
+								HorizontalOptions="Center"
+								VerticalOptions="Center"
+								FontSize="Small"
+								Text="Day's High"
+								FontAttributes="Bold"/>
+							<Label x:Name="daysHigh"
+								HorizontalOptions="FillAndExpand"
+								VerticalOptions="Center"
+								FontSize="Small"
+								Text="0.00"
+								HorizontalTextAlignment="End" />
+						</StackLayout>
+						<StackLayout Orientation="Horizontal">
+							<Label
+								HorizontalOptions="Center"
+								VerticalOptions="Center"
+								FontSize="Small"
+								Text="Market Capitalization"
+								FontAttributes="Bold"/>
+							<Label x:Name="marketCapitalization"
+								HorizontalOptions="FillAndExpand"
+								VerticalOptions="Center"
+								FontSize="Small"
+								Text="0.00"
+								HorizontalTextAlignment="End" />
+						</StackLayout>
+					</StackLayout>
+				</Frame>
+				<StackLayout Orientation="Horizontal"
+					HorizontalOptions="FillAndExpand"
+					VerticalOptions="Center" >
+					<Frame OutlineColor="Accent"
+						HorizontalOptions="FillAndExpand"
+						VerticalOptions="Center">
+						<Button x:Name="Cancel"
+							HorizontalOptions="FillAndExpand"
+							VerticalOptions="Center"
+							Text="Cancel"
+							FontAttributes="Bold"
+							TextColor="Red"
+							Clicked="CancelButton"
+						/>
+					</Frame>
+					<Frame OutlineColor="Accent"
+						HorizontalOptions="FillAndExpand"
+						VerticalOptions="Center">
+						<Button x:Name="Save"
+							HorizontalOptions="FillAndExpand"
+							VerticalOptions="Center"
+							Text="Save"
+							FontAttributes="Bold"
+							TextColor="Green"
+							Clicked="SaveStock"
+						/>
+					</Frame>
+				</StackLayout>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

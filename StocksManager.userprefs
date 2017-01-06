@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{2C12E7EB-E3C0-44DD-A5EA-CCA9C7316E13}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="StocksManager/Views/AddEditStockPage.xaml.cs" Line="120" Column="41" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.StocksManager.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.f625f40c888d899b0fb0c1b5895e6a45a3076fe8" />
+  <MultiItemStartupConfigurations />
+</Properties>

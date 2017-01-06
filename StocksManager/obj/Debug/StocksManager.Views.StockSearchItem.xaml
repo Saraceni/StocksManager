@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="StocksManager.StockSearchItem">
+	<ContentView.Content>
+		<Frame OutlineColor="Accent">
+			<StackLayout Orientation="Horizontal"
+				HorizontalOptions="FillAndExpand"
+				VerticalOptions="Center">
+				<StackLayout Orientation="Vertical"
+					HorizontalOptions="FillAndExpand">
+					<Label x:Name="symbol"
+						Text = "APPL"
+						FontAttributes="Bold"
+						HorizontalOptions="FillAndExpand"
+						HorizontalTextAlignment="Start" />
+					<Label x:Name="company"
+						Text = "Empresa com um nome gigante da porra aff mano"
+						FontSize="Small"
+						HorizontalOptions="FillAndExpand"
+						HorizontalTextAlignment="Start"
+						LineBreakMode="TailTruncation" />
+				</StackLayout>
+				<Button x:Name="add"
+					Text = "+"
+					FontAttributes="Bold"
+					FontSize="Large"
+					HorizontalOptions="Center"
+					VerticalOptions="Center"
+					Clicked="OnAddItemClicked" />
+			</StackLayout>
+		</Frame>
+	</ContentView.Content>
+</ContentView>

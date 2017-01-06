@@ -1,0 +1,17 @@
+/Users/rafaelgontijo/Projects/StocksManager/iOS/obj/iPhoneSimulator/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/rafaelgontijo/Projects/StocksManager/iOS/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
+/Users/rafaelgontijo/Projects/StocksManager/iOS/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
+/Users/rafaelgontijo/Projects/StocksManager/iOS/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
+/Users/rafaelgontijo/Projects/StocksManager/iOS/obj/iPhoneSimulator/Debug/optimized/
+/Users/rafaelgontijo/Projects/StocksManager/iOS/bin/iPhoneSimulator/Debug/StocksManager.iOS.exe.mdb
+/Users/rafaelgontijo/Projects/StocksManager/iOS/bin/iPhoneSimulator/Debug/StocksManager.iOS.exe
+/Users/rafaelgontijo/Projects/StocksManager/iOS/obj/iPhoneSimulator/Debug/StocksManager.iOS.exe
+/Users/rafaelgontijo/Projects/StocksManager/iOS/obj/iPhoneSimulator/Debug/StocksManager.iOS.exe.mdb
+/Users/rafaelgontijo/Projects/StocksManager/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.dll
+/Users/rafaelgontijo/Projects/StocksManager/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.dll
+/Users/rafaelgontijo/Projects/StocksManager/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.iOS.dll
+/Users/rafaelgontijo/Projects/StocksManager/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.dll
+/Users/rafaelgontijo/Projects/StocksManager/iOS/bin/iPhoneSimulator/Debug/StocksManager.dll
+/Users/rafaelgontijo/Projects/StocksManager/iOS/bin/iPhoneSimulator/Debug/StocksManager.dll.mdb
+/Users/rafaelgontijo/Projects/StocksManager/iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/rafaelgontijo/Projects/StocksManager/iOS/bin/iPhoneSimulator/Debug/KeyboardOverlap.Forms.Plugin.iOSUnified.dll

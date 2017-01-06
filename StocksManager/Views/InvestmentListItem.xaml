@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="StocksManager.InvestmentListItem">
+	<ContentView.Content>
+		<Frame OutlineColor="Accent">
+			<StackLayout Orientation="Vertical">
+				<StackLayout Orientation="Horizontal">
+					<StackLayout Orientation="Vertical">
+						<Label x:Name="symbol"
+							Text = "APPL"
+							FontAttributes="Bold"
+							HorizontalOptions="Start"
+							HorizontalTextAlignment="Start" />
+						<Label x:Name="company"
+							Text = "Empresa com um nome gigante da porra aff mano"
+							FontSize="Small"
+							HorizontalOptions="Start"
+							HorizontalTextAlignment="Start"
+							LineBreakMode="TailTruncation" />
+					</StackLayout>
+					<ActivityIndicator x:Name="activityIndicator"
+						IsRunning="true"
+						HorizontalOptions="FillAndExpand"
+						VerticalOptions="Center" />
+				</StackLayout>
+				<StackLayout Orientation="Horizontal">
+					<Label
+						Text = "Investment:"
+						FontSize="Small"
+						FontAttributes="Bold"
+						HorizontalOptions="Start"
+						HorizontalTextAlignment="Start"
+						TextColor="Accent"
+						LineBreakMode="TailTruncation" />
+					<Label x:Name="currency1"
+						Text = "USD"
+						FontSize="Small"
+						HorizontalOptions="FillAndExpand"
+						HorizontalTextAlignment="End"
+						TextColor="Accent"
+						LineBreakMode="TailTruncation" />
+					<Label x:Name="investVal"
+						Text = "0.00"
+						FontSize="Small"
+						HorizontalOptions="Start"
+						HorizontalTextAlignment="Start"
+						TextColor="Accent"
+						LineBreakMode="TailTruncation" />
+				</StackLayout>
+				<StackLayout Orientation="Horizontal">
+					<Label
+						Text = "Return:"
+						FontSize="Small"
+						FontAttributes="Bold"
+						HorizontalOptions="Start"
+						HorizontalTextAlignment="Start"
+						LineBreakMode="TailTruncation" />
+					<Label x:Name="currency2"
+						Text = "USD"
+						FontSize="Small"
+						HorizontalOptions="FillAndExpand"
+						HorizontalTextAlignment="End"
+						TextColor="Green"
+						LineBreakMode="TailTruncation" />
+					<Label x:Name="returnVal"
+						Text = "0.00"
+						FontSize="Small"
+						HorizontalOptions="Start"
+						HorizontalTextAlignment="Start"
+						TextColor="Green"
+						LineBreakMode="TailTruncation" />
+				</StackLayout>
+				<Button x:Name="delete"
+					HorizontalOptions="FillAndExpand"
+					VerticalOptions="Center"
+					Text="DELETE"
+					TextColor="Red"
+					FontAttributes="Bold"
+					Clicked="DeleteClicked"
+				/>
+			</StackLayout>
+		</Frame>
+	</ContentView.Content>
+</ContentView>
